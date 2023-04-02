@@ -7,12 +7,13 @@ const TextInputContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
+    font-family: 'Inter', sans-serif;
 `;
 
 const StyledTextInput = styled.input<{ error?: string }>`
     font-size: 16px;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 4px;
     border: 1px solid ${({ error }) => (error ? '#FF5630' : '#0052CC')};
     outline: none;
     width: 100%;
@@ -22,6 +23,7 @@ const StyledTextInput = styled.input<{ error?: string }>`
 
     &::placeholder {
         color: #4F4F4F;
+        font-family: 'Inter', sans-serif;
     }
 
     &:focus {
