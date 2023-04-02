@@ -28,6 +28,7 @@ const StyledTextInput = styled.input<{ error?: string }>`
 
     &:focus {
         border-color: #0747A6;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.158);
     }
 `;
 

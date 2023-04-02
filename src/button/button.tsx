@@ -9,6 +9,7 @@ const ButtonContainer = styled.button<ButtonProps>`
     cursor: pointer;
     border-radius: 8px;
     font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease-in-out;
 
     /* Size variants */
     ${({ size }) => {
