@@ -13,5 +13,5 @@ export {
     TextInput,
     TextInputProps,
     Checkbox,
-    CheckboxProps
+    CheckboxProps,
 };
