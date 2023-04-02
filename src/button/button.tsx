@@ -45,18 +45,36 @@ const ButtonContainer = styled.button<ButtonProps>`
             color: #fff;
             background-color: #0052CC;
             border: none;
+            &:hover {
+                background-color: 
+            }
+            &:focus {
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+                outline: none;
+            }
             `;
         case 'secondary':
             return `
             color: #0052CC;
             background-color: #fff;
             border: 2px solid #0052CC;
+            &:hover {
+                border-color: #0066cc;
+                color: #0066cc;
+            }
+            &:focus {
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+                outline: none;
+            }
             `;
         case 'tertiary':
             return `
             color: #0052CC;
             background-color: transparent;
             border: none;
+            &:hover {
+                background-color: #DEEBFF;
+            }
             `;
         default:
             return `
@@ -74,16 +92,7 @@ const ButtonContainer = styled.button<ButtonProps>`
             opacity: 0.5;
             cursor: not-allowed;
         `;
-        } else {
-        return `
-            &:hover {
-            background-color: #0066cc;
-            }
-            &:focus {
-            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
-            outline: none;
-            }
-        `;
+        }
         }
     }}
 `;
