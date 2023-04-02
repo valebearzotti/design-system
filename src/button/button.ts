@@ -5,8 +5,8 @@ import { ButtonProps } from './button.types';
 const Button = styled.button<ButtonProps>`
     /* Shared styles */
     font-weight: 600;
-    border-radius: 4px;
     cursor: pointer;
+    border-radius: 8px;
 
     /* Size variants */
     ${({ size }) => {
@@ -24,7 +24,7 @@ const Button = styled.button<ButtonProps>`
         case 'large':
             return `
             font-size: 18px;
-            padding: 16px 24px;
+            padding: 16px 28px;
             `;
         default:
             return `
@@ -40,25 +40,25 @@ const Button = styled.button<ButtonProps>`
         case 'primary':
             return `
             color: #fff;
-            background-color: #007aff;
+            background-color: #0052CC;
             border: none;
             `;
         case 'secondary':
             return `
-            color: #007aff;
+            color: #0052CC;
             background-color: #fff;
-            border: 1px solid #007aff;
+            border: 2px solid #0052CC;
             `;
         case 'tertiary':
             return `
-            color: #007aff;
+            color: #0052CC;
             background-color: transparent;
             border: none;
             `;
         default:
             return `
             color: #fff;
-            background-color: #007aff;
+            background-color: #0052CC;
             border: none;
             `;
         }

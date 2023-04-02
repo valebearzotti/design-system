@@ -18,3 +18,7 @@ To add elements to the StoryBook, simply add a new file in the `__stories__` fol
 Remember that a design system is not only a collection of UI components but also a set of guidelines, principles, and best practices that ensure consistency, efficiency, and scalability.
 
 In this particular project I feature a `theme.ts` basic file but don't really extend it to components. But it's there if you want to use it. You should if you want to make your project as complete and easy to scale as you can, but it requires the work of a graphic designer which I don't have at the moment.
+
+### About the color palette
+
+Since you recall, I'm no designer so I'm using Atlassian's color palette, which you can find [here](https://atlassian.design/foundations/color).
