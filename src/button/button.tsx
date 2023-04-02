@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { ButtonProps } from './button.types';
 
-const StyledButton = styled.button<ButtonProps>`
+const ButtonContainer = styled.button<ButtonProps>`
     /* Shared styles */
     font-weight: 600;
     cursor: pointer;
@@ -87,12 +87,24 @@ const StyledButton = styled.button<ButtonProps>`
     }}
 `;
 
-const Button: FC<ButtonProps> = ({ size, variant, disabled, loading, icon, children, ...props }) => {
+const Button = ({ 
+    size, 
+    variant, 
+    disabled, 
+    loading, 
+    icon, 
+    children
+}: ButtonProps): JSX.Element => {
     return (
-        <StyledButton size={size} variant={variant} disabled={disabled} loading={loading} {...props}>
+        <ButtonContainer 
+            size={size} 
+            variant={variant} 
+            disabled={disabled} 
+            loading={loading} 
+        >
             {icon && <span>{icon}</span>}
             {children}
-        </StyledButton>
+        </ButtonContainer>
     )
 };
 
