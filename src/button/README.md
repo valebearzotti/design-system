@@ -29,7 +29,7 @@ The `Button` component is a reusable button that can be customized with differen
 
 ## Usage Examples
 
-```typescript
+```javascript
     import Button from './components/Button';
 
     <Button>Default Button</Button>
