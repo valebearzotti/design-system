@@ -26,7 +26,8 @@
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
-    "@storybook/react": "^6.4.9",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.5.16",
     "@swc/jest": "^0.2.15",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -34,7 +35,7 @@
     "@types/jest": "^27.0.3",
     "@types/react": "^17.0.53",
     "@types/react-dom": "^17.0.11",
-    "@types/styled-components": "^5.1.19",
+    "@types/styled-components": "^5.1.26",
     "babel-loader": "^8.2.3",
     "jest": "^27.4.5",
     "react": "^17.0.2",
@@ -49,6 +50,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "dependencies": {
+    "@storybook/addon-postcss": "^2.0.0",
     "react-is": "^18.2.0"
   }
 }
