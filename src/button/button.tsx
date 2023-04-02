@@ -1,12 +1,14 @@
+import React, {FC} from 'react'
 import styled from 'styled-components';
 
 import { ButtonProps } from './button.types';
 
-const Button = styled.button<ButtonProps>`
+const StyledButton = styled.button<ButtonProps>`
     /* Shared styles */
     font-weight: 600;
     cursor: pointer;
     border-radius: 8px;
+    font-family: 'Inter', sans-serif;
 
     /* Size variants */
     ${({ size }) => {
@@ -84,5 +86,14 @@ const Button = styled.button<ButtonProps>`
         }
     }}
 `;
+
+const Button: FC<ButtonProps> = ({ size, variant, disabled, loading, icon, children, ...props }) => {
+    return (
+        <StyledButton size={size} variant={variant} disabled={disabled} loading={loading} {...props}>
+            {icon && <span>{icon}</span>}
+            {children}
+        </StyledButton>
+    )
+};
 
 export default Button;

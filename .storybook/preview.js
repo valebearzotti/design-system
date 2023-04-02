@@ -12,7 +12,6 @@ export const parameters = {
     decorators: [
       (Story) => (
         <ThemeProvider theme={theme}>
-          <body style={{ margin: 0, padding: 0, fontFamily: "Inter" }} />
           <Story />
         </ThemeProvider>
       ),

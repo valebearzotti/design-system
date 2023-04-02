@@ -6,6 +6,7 @@ const theme: DefaultTheme = {
     secondary: '#172B4D',
     text: '#333333',
     background: '#F5F5F5',
+    error: '#FF5630'
   },
   fontSizes: {
     small: '12px',
