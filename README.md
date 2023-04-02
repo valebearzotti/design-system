@@ -22,3 +22,8 @@ In this particular project I feature a `theme.ts` basic file but don't really ex
 ### About the color palette
 
 Since you recall, I'm no designer so I'm using Atlassian's color palette, which you can find [here](https://atlassian.design/foundations/color).
+
+### Changing the font
+
+I'm using Google Fonts' [Inter](https://fonts.google.com/specimen/Inter). If you wish to change it, I recommend you go to `.storybook/preview-head.html` and change the `link` tag to the font you want.
+In addition, you should also change the `font-family` in the components you want to apply the new font to.
